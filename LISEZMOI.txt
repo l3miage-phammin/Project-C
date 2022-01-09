@@ -1,0 +1,13 @@
+# Commentaires généraux
+
+# Structure de données
+
+	La routine et la pile sont des listes enchaînées.
+Chaque cellule de ces listes enchaînées peut reçevoir une sous-liste enchaînée
+(utile pour les groupes de commmandes {}).
+
+	Dès le départ, tous les groupes de commandes {} sont imbriqués dans des
+sous-listes enchaînées, ainsi la majorités de nos fonctions sont récursives.
+
+	A un moment, à cause du nombre de fonction récursives dans les tests
+de performances, nous arrivons à un stackoverflow, pour y remédier: ulimit -s unlimited
